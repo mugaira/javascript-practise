@@ -362,5 +362,97 @@
 //  })
 //  .catch((err) => console.log("ERROR OCCURRED", err));
 
+// axios
+//  .get('https://swapi.dev/api/planets')
+//  .then(data => {
+//   // data is already parsed for us
+//   const filmUrl = data.data.results;
+//   console.log(data.data.results);
+//   return axios.get(filmUrl)
+//  })
+//  .then(() => {
+//   console.log(data)
+//  })
+//  .catch(err => console.log('In Catch Block: \n\n',err))
 
+// async function greet(){
+//  return "hello"
+// }
 
+// console.log(greet())
+
+// async function problem(){
+// throw new Error('problem')
+// }
+
+// console.log(problem())
+
+// async function add(x,y){
+//  if(typeof x !== 'number' || typeof y !== 'number'){
+//   throw 'X and y must be number'
+//  }
+//  return x+y
+// }
+
+// add('hello',4)
+// .then(res => {
+//  console.log(res);
+// })
+// .catch(res => {
+//  console.log(res);
+// })
+
+// function getPlanets(){
+//  return axios.get('https://swapi.dev/api/planets');
+// }
+
+// getPlanets()
+// .then((result) => {
+//  console.log(result.data)
+
+// })
+
+// async function getPlanets(){
+//  const res = await axios.get('https://swapi.dev/api/planets');
+//  console.log(res.data.results)
+// }
+
+// getPlanets()
+// .catch(err => {
+//  console.log("iam error",err);
+// })
+
+// async function getPlanets(){
+// try {
+//   const res = await axios.get('https://swapi.dev/api/planetss');
+//   console.log(res.data.results)
+// } catch (error) {
+//   console.log("iam error",error);
+//  }
+// }
+
+// getPlanets()
+
+// async function getPokemon() {
+
+//  const pokemon1Promise = axios.get("https://pokeapi.co/api/v2/pokemon/1");
+//  const pokemon2Promise = axios.get("https://pokeapi.co/api/v2/pokemon/2");
+//  const pokemon3Promise = axios.get("https://pokeapi.co/api/v2/pokemon/3");
+
+//  const results = await Promise.all([
+//   pokemon1Promise,
+//   pokemon2Promise,
+//   pokemon3Promise,
+//  ]);
+
+//  console.log(results);
+
+ // const pokemon1 = await pokemon1Promise;
+ // const pokemon2 = await pokemon2Promise;
+ // const pokemon3 = await pokemon3Promise;
+
+ // console.log(pokemon1.data);
+ // console.log(pokemon2.data);
+ // console.log(pokemon3.data);
+// }
+// getPokemon();
